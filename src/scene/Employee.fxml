@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeController">
+   <children>
+      <VBox fx:id="dashboard" layoutX="32.0" layoutY="83.0" prefHeight="717.0" prefWidth="262.0" style="-fx-background-color: #0F76BD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1038.0" AnchorPane.topAnchor="83.0">
+         <children>
+            <Pane fx:id="paneDashboardProfile" prefHeight="79.0" prefWidth="262.0">
+               <children>
+                  <Label fx:id="lblDashName" layoutX="84.0" layoutY="14.0" text="Alex Smith">
+                     <font>
+                        <Font name="Arial Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDashName1" layoutX="84.0" layoutY="45.0" text="CEO" textFill="#979797">
+                     <font>
+                        <Font name="Arial Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="paneDashboardImage" layoutX="14.0" layoutY="15.0" prefHeight="50.0" prefWidth="50.0" />
+               </children>
+            </Pane>
+            <Label fx:id="lblProfile" onMouseClicked="#profileClick" prefHeight="71.0" prefWidth="307.0" text="Profile">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/E:/Java/Projects/Apolo/images/dashboard-icons/person.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblMyTeams" onMouseClicked="#myTeamsClick" prefHeight="71.0" prefWidth="307.0" text="My Teams">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/E:/Java/Projects/Apolo/images/dashboard-icons/teams.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblMySalary" onMouseClicked="#mySalaryClick" prefHeight="71.0" prefWidth="307.0" text="My Salary">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/E:/Java/Projects/Apolo/images/dashboard-icons/salary.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblLeave" onMouseClicked="#leaveClick" prefHeight="71.0" prefWidth="307.0" text="Leave">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/E:/Java/Projects/Apolo/images/dashboard-icons/leave.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblChatBox" onMouseClicked="#chatBoxClick" prefHeight="71.0" prefWidth="307.0" text="Chat Box">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/E:/Java/Projects/Apolo/images/dashboard-icons/chatbox.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="79.0" fitWidth="262.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="721.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="paneHeader" layoutX="264.0" prefHeight="79.0" prefWidth="1038.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="btnBell" fitHeight="25.0" fitWidth="25.0" layoutX="914.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="btnSettings" fitHeight="15.0" fitWidth="15.0" layoutX="880.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane fx:id="paneHeaderImage" layoutX="974.0" layoutY="20.0" prefHeight="40.0" prefWidth="40.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneContent" layoutX="262.0" layoutY="83.0" prefHeight="717.0" prefWidth="1038.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0" />
+   </children>
+</AnchorPane>

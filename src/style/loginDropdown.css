@@ -1,0 +1,12 @@
+
+.login_button
+{
+    -fx-background-color: #ff8000;
+    -fx-background-radius: 10;
+}
+
+.login_button:hover
+{
+    -fx-background-color: #e67300;
+
+}

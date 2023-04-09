@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Pane fx:id="paneLevel1" layoutX="450.0" layoutY="90.0" prefHeight="362.0" prefWidth="400.0">
+         <children>
+            <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="60.0" layoutY="32.0" prefHeight="52.0" prefWidth="281.0" promptText="Enter Your name or ID" styleClass="textfield" stylesheets="@../style/login.css">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnLogin" layoutX="83.0" layoutY="241.0" onMouseClicked="#loginUser" prefHeight="52.0" prefWidth="234.0" styleClass="btnLogin" stylesheets="@../style/login.css" text="Login">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="60.0" layoutY="125.0" prefHeight="52.0" prefWidth="281.0" promptText="Enter password" styleClass="textfield" stylesheets="@../style/login.css">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

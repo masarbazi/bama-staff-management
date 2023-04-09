@@ -1,0 +1,15 @@
+
+.btnLogin
+{
+    -fx-background-color: #ff8000;
+}
+.btnLogin:hover
+{
+    -fx-background-color: #e67300;
+    -fx-effect: dropshadow(three-pass-box, maroon, 3, 0.7, 0, 0);
+}
+
+.textfield:focused
+{
+    -fx-background-color: #e6e6e6;
+}

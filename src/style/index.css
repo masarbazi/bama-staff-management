@@ -1,0 +1,20 @@
+
+.anchMain
+{
+    -fx-background-color: #e6e6e6;
+    -fx-background-radius: 10;
+}
+
+.btnJobTitles
+{
+    -fx-background-color: #b366ff;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+}
+
+.btnSkills
+{
+    -fx-background-color: #40bf80;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+}

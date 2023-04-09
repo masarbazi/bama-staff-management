@@ -1,0 +1,18 @@
+
+.btnNewLevel
+{
+    -fx-background-color: #ff8000;
+}
+
+.btnNewLevel:hover
+{
+    -fx-background-color: #7556e5;
+}
+
+.btnSalaryManagement
+{
+    -fx-background-color: #ff8000;
+}
+
+
+

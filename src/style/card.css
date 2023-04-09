@@ -1,0 +1,35 @@
+
+.name
+{
+    -fx-font-family: Corbel;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: #6f6a6a;
+}
+
+.skill
+{
+    -fx-font-family: Consolas;
+    -fx-font-size: 15;
+    -fx-text-fill: #000000;
+}
+
+.image
+{
+    -fx-background-radius: 5;
+}
+
+.pane
+{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-border-width: 0.13;
+}
+
+.pane:hover
+{
+    -fx-effect: dropshadow(three-pass-box, black, 2, -1, -1, 1);
+}

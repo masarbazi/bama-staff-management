@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.employee.MySalary">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="97.0" prefHeight="46.0" prefWidth="163.0" text="Post : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPost" layoutX="213.0" layoutY="109.0" prefHeight="30.0" prefWidth="188.0" text="CopyWriter">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="147.0" prefHeight="46.0" prefWidth="163.0" text="Month Salary : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMonthSalary" layoutX="213.0" layoutY="158.0" prefHeight="30.0" prefWidth="188.0" text="5,400,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="197.0" prefHeight="46.0" prefWidth="163.0" text="Housing : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHousing" layoutX="213.0" layoutY="209.0" prefHeight="30.0" prefWidth="188.0" text="500,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="247.0" prefHeight="46.0" prefWidth="163.0" text="Overtime : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOvertime" layoutX="213.0" layoutY="259.0" prefHeight="30.0" prefWidth="188.0" text="1,200,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="297.0" prefHeight="46.0" prefWidth="163.0" text="Family Consumption : ">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFamily" layoutX="213.0" layoutY="310.0" prefHeight="30.0" prefWidth="188.0" text="800,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="347.0" prefHeight="46.0" prefWidth="163.0" text="Insurence : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsurance" layoutX="213.0" layoutY="360.0" prefHeight="30.0" prefWidth="188.0" text="1,300,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="397.0" prefHeight="46.0" prefWidth="163.0" text="Children : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblChildren" layoutX="213.0" layoutY="411.0" prefHeight="30.0" prefWidth="188.0" text="600,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="447.0" prefHeight="46.0" prefWidth="163.0" text="Mission : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMission" layoutX="213.0" layoutY="462.0" prefHeight="30.0" prefWidth="188.0" text="1,000,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="497.0" prefHeight="46.0" prefWidth="163.0" text="Tax : ">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTax" layoutX="213.0" layoutY="509.0" prefHeight="30.0" prefWidth="188.0" text="400,000">
+         <font>
+            <Font name="Gadugi" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="338.0" layoutY="36.0" prefHeight="46.0" prefWidth="163.0" text="Total : ">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="505.0" layoutY="48.0" prefHeight="30.0" prefWidth="188.0" text="5,400,000">
+         <font>
+            <Font name="Gadugi" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="48.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/salary-icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

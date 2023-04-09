@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manager.NewEmployee">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="717.0" fitWidth="1048.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-18.0" AnchorPane.topAnchor="5.0" />
+      <Pane fx:id="paneLevel2" layoutX="469.0" layoutY="110.0" opacity="0.0" prefHeight="255.0" prefWidth="461.0">
+         <children>
+            <TextField fx:id="txtPassword" layoutX="45.0" layoutY="32.0" prefHeight="25.0" prefWidth="169.0" promptText="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPasswordReenter" layoutX="233.0" layoutY="32.0" prefHeight="25.0" prefWidth="169.0" promptText="Reenter password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="comboPost" layoutX="45.0" layoutY="86.0" prefHeight="25.0" prefWidth="169.0" promptText="Hired as" />
+            <JFXButton fx:id="btnHire" layoutX="131.0" layoutY="142.0" onMouseClicked="#hireClick" prefHeight="48.0" prefWidth="199.0" styleClass="btnNewLevel" stylesheets="@../../style/manager.css" text="Hire">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="paneLevel1" layoutX="449.0" layoutY="83.0" prefHeight="302.0" prefWidth="500.0">
+         <children>
+            <TextField fx:id="txtName" layoutX="61.0" layoutY="37.0" prefHeight="25.0" prefWidth="169.0" promptText="Name">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtLastname" layoutX="249.0" layoutY="37.0" prefHeight="25.0" prefWidth="169.0" promptText="Last Name">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtChildrenNum" layoutX="61.0" layoutY="93.0" prefHeight="26.0" prefWidth="169.0" promptText="Number of children">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtGmail" layoutX="61.0" layoutY="146.0" prefHeight="25.0" prefWidth="169.0" promptText="Gmail">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPhone" layoutX="249.0" layoutY="146.0" prefHeight="25.0" prefWidth="169.0" promptText="Phone">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnNext" layoutX="140.0" layoutY="214.0" onMouseClicked="#nextClick" prefHeight="48.0" prefWidth="199.0" styleClass="btnNewLevel" stylesheets="@../../style/manager.css" text="Next">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

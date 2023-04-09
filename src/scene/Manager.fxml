@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerController">
+   <children>
+      <VBox fx:id="dashboard" layoutX="32.0" layoutY="83.0" prefHeight="717.0" prefWidth="262.0" style="-fx-background-color: #0F76BD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1038.0" AnchorPane.topAnchor="83.0">
+         <children>
+            <Pane fx:id="paneDashboardProfile" prefHeight="79.0" prefWidth="262.0">
+               <children>
+                  <Label layoutX="84.0" layoutY="14.0" text="Alex Smith">
+                     <font>
+                        <Font name="Arial Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="45.0" text="CEO" textFill="#979797">
+                     <font>
+                        <Font name="Arial Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="14.0" layoutY="15.0" prefHeight="50.0" prefWidth="50.0" />
+               </children></Pane>
+            <Label fx:id="lblProfile" onMouseClicked="#profileClicked" prefHeight="71.0" prefWidth="307.0" text="Profile">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboard-icons/person.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblNewEmployee" onMouseClicked="#newEmployeeClicked" prefHeight="71.0" prefWidth="307.0" text="New Employee">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboard-icons/new.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblEmployees" onMouseClicked="#employeesClicked" prefHeight="71.0" prefWidth="307.0" text="Employees">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboard-icons/employees.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblTeams" onMouseClicked="#teamsClicked" prefHeight="71.0" prefWidth="307.0" text="Teams">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboard-icons/teams.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblSalaryManagement" onMouseClicked="#salaryManagementClicked" prefHeight="71.0" prefWidth="307.0" text="Salary Management">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboard-icons/salary.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblLeaveManagement" onMouseClicked="#leaveManagementClicked" prefHeight="71.0" prefWidth="307.0" text="Leave Management">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboard-icons/leave.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblChatBox" onMouseClicked="#chatBoxClicked" prefHeight="71.0" prefWidth="307.0" text="Chat Box">
+               <font>
+                  <Font name="Agency FB" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboard-icons/chatbox.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="79.0" fitWidth="262.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="721.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="paneHeader" layoutX="264.0" prefHeight="79.0" prefWidth="1038.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="btnBell" fitHeight="25.0" fitWidth="25.0" layoutX="914.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="btnSettings" fitHeight="15.0" fitWidth="15.0" layoutX="880.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane fx:id="paneHeaderImage" layoutX="974.0" layoutY="20.0" prefHeight="40.0" prefWidth="40.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneContent" layoutX="262.0" layoutY="83.0" prefHeight="717.0" prefWidth="1038.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0" />
+   </children>
+</AnchorPane>

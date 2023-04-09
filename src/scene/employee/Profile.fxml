@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.employee.Profile">
+   <children>
+      <Rectangle fx:id="recImage" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="120.0" layoutX="35.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="lblName" layoutX="172.0" layoutY="35.0" prefHeight="54.0" prefWidth="376.0" text="Alex Smith">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPost" layoutX="188.0" layoutY="89.0" prefHeight="54.0" prefWidth="209.0" text="CopyWriter">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNumber" layoutX="172.0" layoutY="190.0" prefHeight="36.0" prefWidth="168.0" text="09132323344">
+         <font>
+            <Font name="Candara" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGmail" layoutX="172.0" layoutY="237.0" prefHeight="36.0" prefWidth="278.0" text="burybirds@gmail.com">
+         <font>
+            <Font name="Candara" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgRecycle" fitHeight="73.0" fitWidth="48.0" layoutX="976.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/recycle.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

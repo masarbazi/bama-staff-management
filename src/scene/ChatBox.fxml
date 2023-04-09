@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.ChatBoxController">
+   <children>
+      <Pane fx:id="paneEmoji" layoutX="750.0" layoutY="141.0" prefHeight="717.0" prefWidth="254.0" stylesheets="@../style/chatBox.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="paneMessages" layoutX="62.0" layoutY="21.0" prefHeight="717.0" prefWidth="784.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txtChatText" layoutX="14.0" layoutY="678.0" prefHeight="25.0" prefWidth="712.0" />
+            <ImageView fx:id="btnSendMessage" fitHeight="35.0" fitWidth="35.0" layoutX="735.0" layoutY="672.0" onMouseClicked="#btnSendMessageClicked" pickOnBounds="true" preserveRatio="true" />
+            <ListView fx:id="listMessages" layoutX="14.0" layoutY="14.0" prefHeight="648.0" prefWidth="753.0" />
+         </children></Pane>
+      <Pane fx:id="panePeopleList" prefHeight="717.0" prefWidth="784.0">
+         <children>
+            <Label layoutX="119.0" layoutY="46.0" text="Enter Chat ID">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtChatID" layoutX="284.0" layoutY="45.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnFindTagetChat" layoutX="474.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#btnFindClicked" prefHeight="35.0" prefWidth="89.0" text="Find">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Rectangle fx:id="recTagetChatImage" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="229.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+            <Label fx:id="lblTargetChatName" layoutX="319.0" layoutY="224.0" prefHeight="27.0" prefWidth="310.0" text=". . . ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnEnterChat" layoutX="229.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#btnEnterChatClicked" prefHeight="37.0" prefWidth="310.0" text="Enter Chat">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

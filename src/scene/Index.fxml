@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+   <children>
+      <AnchorPane fx:id="anchMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" styleClass="anchMain" stylesheets="@../style/index.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="paneMenu" prefHeight="70.0" prefWidth="1300.0" AnchorPane.bottomAnchor="735.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="imgLogo" fitHeight="58.0" fitWidth="61.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/E:/Java/Projects/Apolo/images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblPeopleMenu" layoutX="181.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#menuClick" prefWidth="80.0" text="People" textFill="#403c3c">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblTeamsMenu" layoutX="266.0" layoutY="10.0" onMouseClicked="#menuClick" text="Teams" textFill="#403c3c">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblSkillsMenu" layoutX="348.0" layoutY="10.0" onMouseClicked="#menuClick" text="Skills" textFill="#403c3c">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblLoginMenu" layoutX="421.0" layoutY="10.0" onMouseClicked="#menuClick" text="Login" textFill="#403c3c">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Pane fx:id="paneUnderLine" layoutX="191.0" layoutY="50.0" prefHeight="5.0" prefWidth="60.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneHeader" layoutY="70.0" prefHeight="180.0" prefWidth="1300.0" AnchorPane.bottomAnchor="538.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="164.0" text="Teams &amp; Archivements" textFill="#757575">
+                     <font>
+                        <Font name="Oswald Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="650.0" layoutY="14.0" prefHeight="28.0" prefWidth="69.0" text="Job Titles" textFill="#757575">
+                     <font>
+                        <Font name="Oswald Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="paneJobTitles" layoutX="650.0" layoutY="58.0" prefHeight="120.0" prefWidth="500.0">
+                     <children>
+                        <Button fx:id="btnJob" layoutY="14.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnJobTitles" stylesheets="@../style/card.css" text="CEO">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnJob1" layoutX="161.0" layoutY="14.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnJobTitles" stylesheets="@../style/card.css" text="Assessor">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnJob11" layoutX="321.0" layoutY="14.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnJobTitles" stylesheets="@../style/card.css" text="Bookkeeper">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnJob2" layoutX="-1.0" layoutY="49.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnJobTitles" stylesheets="@../style/card.css" text="Controller">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnJob12" layoutX="160.0" layoutY="49.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnJobTitles" stylesheets="@../style/card.css" text="Chief">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnJob3" layoutX="-1.0" layoutY="84.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnSkills" stylesheets="@../style/card.css" text="CEO">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnJob13" layoutX="160.0" layoutY="84.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnSkills" stylesheets="@../style/card.css" text="Assessor">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnJob111" layoutX="320.0" layoutY="84.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="150.0" styleClass="btnSkills" stylesheets="@../style/card.css" text="Bookkeeper">
+                           <font>
+                              <Font name="FontAwesome Regular" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="paneBody" layoutY="258.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="258.0">
+               <children>
+                  <Pane fx:id="panePeople" prefHeight="542.0" prefWidth="1300.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="paneLoginDrop" layoutX="500.0" layoutY="-200.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Circle fx:id="circleLD" fill="DODGERBLUE" radius="35.0" stroke="BLACK" strokeType="INSIDE" translateX="49.0" translateY="80.0" />
+            <Label fx:id="lblLDName" layoutX="99.0" layoutY="60.0" prefHeight="25.0" prefWidth="194.0" text="Mary Smith">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLDLogin" layoutX="137.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="38.0" prefWidth="149.0" styleClass="login_button" stylesheets="@../style/loginDropdown.css" text="Login">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtLDPassword" layoutX="96.0" layoutY="104.0" prefHeight="31.0" prefWidth="194.0" promptText="Enter Your Password" style="-fx-background-radius: 7;" />
+            <Label fx:id="lblHiThere" layoutX="99.0" layoutY="20.0" prefHeight="25.0" prefWidth="142.0" text="Hi there,">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLDClose" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#closeLD" prefHeight="38.0" prefWidth="70.0" styleClass="login_button" stylesheets="@../style/loginDropdown.css" text="close">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
